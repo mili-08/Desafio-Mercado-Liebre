@@ -1,0 +1,82 @@
+.header-main{
+    background-color: #EAC926;
+    font-family:Roboto;
+    font-size: 12px; 
+    height: 355px;
+}
+.title{
+    font-size: 24px;
+}
+.precio{
+    font-size: 18px;
+}
+.descuento{
+    font-size: 16px;
+}
+h3{
+    font-size: 16px;  
+}
+.center{
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 12px;
+}
+.inline{
+   display: inline;
+}
+
+.burguer-menu{
+    text-align: center;
+}
+.burguer-menu i{
+    background-color: blue;
+    color: white;
+    padding: 6px;
+}
+
+footer section{
+    text-align: center;
+}
+footer section i {
+    font-size: 2em;
+    color: rgb(21, 21, 235);
+    margin-bottom: 10px;
+}
+.logo img{
+   display: inline;
+   width: 50%;
+   margin-top: 12px;
+   margin: 23px;
+   margin-bottom: 25px;
+}
+.image-lupa{
+    margin: 5px;
+    margin-top: -18px;
+    font-size: 10px;
+    position: relative; /* Para la posicion de un elemento  . AUNQUE TAMBIEN SE PUEDE USAR LA OPCION MARGIN-RIGTH: 23PX */  
+    left: 16px;   /* LO corre a la derecha, para la izquierda rigth: 23px*/
+}
+.image-lupa i{
+    background-color: rgb(255, 255, 255);
+    padding: 2px;  /* SE USA PARA DETERMINAR EL CONTORNO DE UN ICONO*/
+    border: 1px solid black;
+    opacity: 0.8;
+}
+.barra-busqueda p{
+    background-color: white;
+    opacity: 0.8;
+    margin: 20px;
+    margin-top: 10px;
+    margin-right: 180px;
+    padding: 2px;
+    border: 1px solid black;
+} 
+nav.iconos-header ul li i{
+    color: black;
+}
+#subir{
+    margin-top: -12px;
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-bottom: 60px;
+}
