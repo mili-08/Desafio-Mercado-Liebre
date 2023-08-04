@@ -98,6 +98,7 @@ footer section i {
     margin-right: 180px;
     padding: 2px;
     border: 1px solid black;
+    width: 45vw;
 }
 
 nav.iconos-header ul li i {
@@ -159,6 +160,10 @@ nav.iconos-header ul li i {
     display: none;
 }
 
+.copy-ubicar {
+    padding-left: 1em;
+}
+
 @media (min-width: 480px) {
     .box-article #mobile-no-mostrar {
         display: block;
@@ -179,6 +184,9 @@ nav.iconos-header ul li i {
     }
     .header {
         height: 30em;
+    }
+    .barra-busqueda p {
+        width: 33vw;
     }
 
 }
@@ -202,5 +210,8 @@ nav.iconos-header ul li i {
     }
     .header {
         height: 33em;
+    }
+    .barra-busqueda p {
+        width: 28vw;
     }
 }
