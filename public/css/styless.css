@@ -1,68 +1,96 @@
-.header-main{
+* {
+    box-sizing: border-box;
+}
+
+.header {
     background-color: #EAC926;
-    font-family:Roboto;
-    font-size: 12px; 
-    height: 355px;
+    font-family: Roboto;
+    font-size: 12px;
+    height: 20em;
 }
 .title{
     font-size: 24px;
+    color: rgb(79, 73, 73);
+    margin-left: 10px;
 }
-.precio{
+#title-ofertas {
+    padding-top: 20px;
+}
+.precio {
     font-size: 18px;
 }
-.descuento{
+.descuento {
+    font-size: 16px;
+    color: rgb(20, 178, 20);
+}
+
+body {
+    margin: 0;
+    background-color: #ebebeb;
+}
+
+h3 {
     font-size: 16px;
 }
-h3{
-    font-size: 16px;  
-}
-.center{
+
+.center {
     text-align: center;
     margin-bottom: 20px;
     margin-top: 12px;
 }
-.inline{
-   display: inline;
+
+.inline {
+    display: inline;
 }
 
-.burguer-menu{
+.burguer-menu {
     text-align: center;
 }
-.burguer-menu i{
+
+.burguer-menu i {
+    font-size: 2em;
     background-color: blue;
     color: white;
     padding: 6px;
 }
 
-footer section{
+footer section {
     text-align: center;
 }
+
 footer section i {
     font-size: 2em;
     color: rgb(21, 21, 235);
     margin-bottom: 10px;
 }
-.logo img{
-   display: inline;
-   width: 50%;
-   margin-top: 12px;
-   margin: 23px;
-   margin-bottom: 25px;
+
+.logo img {
+    display: inline;
+    width: 30%;
+    margin-top: 12px;
+    margin: 23px;
+    margin-bottom: 25px;
 }
-.image-lupa{
+
+.image-lupa {
     margin: 5px;
     margin-top: -18px;
     font-size: 10px;
-    position: relative; /* Para la posicion de un elemento  . AUNQUE TAMBIEN SE PUEDE USAR LA OPCION MARGIN-RIGTH: 23PX */  
-    left: 16px;   /* LO corre a la derecha, para la izquierda rigth: 23px*/
+    position: relative;
+    /* Para la posicion de un elemento  . AUNQUE TAMBIEN SE PUEDE USAR LA OPCION MARGIN-RIGTH: 23PX */
+    left: 16px;
+    /* LO corre a la derecha, para la izquierda rigth: 23px*/
 }
-.image-lupa i{
+
+.image-lupa i {
     background-color: rgb(255, 255, 255);
-    padding: 2px;  /* SE USA PARA DETERMINAR EL CONTORNO DE UN ICONO*/
+    padding: 2px;
+    /* SE USA PARA DETERMINAR EL CONTORNO DE UN ICONO*/
     border: 1px solid black;
     opacity: 0.8;
 }
-.barra-busqueda p{
+
+.barra-busqueda p {
     background-color: white;
     opacity: 0.8;
     margin: 20px;
@@ -70,13 +98,109 @@ footer section i {
     margin-right: 180px;
     padding: 2px;
     border: 1px solid black;
-} 
-nav.iconos-header ul li i{
+}
+
+nav.iconos-header ul li i {
     color: black;
 }
-#subir{
+
+#subir {
     margin-top: -12px;
     margin-left: 30px;
     margin-right: 30px;
     margin-bottom: 60px;
+}
+.shipping {
+    display: inline-block;
+    border: 1px solid rgb(20, 178, 20);
+    border-radius: 150%;
+    padding: 12px;
+    margin-bottom: 8px;
+    color: rgb(20, 178, 20);
+}
+.center-main {
+    width: 90vw;
+}
+
+.article-details {
+    margin-bottom: 10px;
+    background-color: #ebebeb;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 15px;
+    /* FIJATE ESTO MARCA, EL ESPACIO PARA QUE NO ESTE TODO JUNTO (entre los productos)*/
+}
+
+.article-final {
+    margin-bottom: 10px;
+    background-color: #ebebeb;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 15px;
+}
+
+.article-details img,
+.article-final img {
+    width: 100%;
+}
+
+.box-article {
+    border-top: 1px solid transparent;
+    margin-top: -2px;
+    padding-top: 10px;
+    padding-left: 12px;
+    padding-bottom: 10px;
+    background-color: white;
+}
+.image-banner img {
+    width: 100%;
+}
+.box-article #mobile-no-mostrar, #mobile-no-mostrar{
+    display: none;
+}
+
+@media (min-width: 480px) {
+    .box-article #mobile-no-mostrar {
+        display: block;
+    }
+    #mobile-si-mostrar {
+        display: none;
+    }
+    #mobile-no-mostrar {
+        display: block;
+    }
+    .article-details img,
+    .article-final img {
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+
+    .box-article {
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+    .header {
+        height: 30em;
+    }
+
+}
+@media (min-width: 769px) {
+    .box-article #mobile-no-mostrar {
+        display: block;
+    }
+    #mobile-no-mostrar {
+        display: block;
+    }
+    #mobile-si-mostrar {
+        display: none;
+    }
+    .article-details img,
+    .article-final img {
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+
+    .box-article {
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+    .header {
+        height: 33em;
+    }
 }
