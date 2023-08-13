@@ -1,6 +1,6 @@
 const express = require('express');
 const app = express();
-const PORT = 3030;
+const port =  process.env.PORT || 3030;
 
 app.use(express.static('public'));
 
@@ -29,6 +29,6 @@ app.get('/misCompras.html',(req,res)=>{
 });
 
 
-app.listen(3030,()=>{
-    console.log(`[Server] running on port ${PORT}`);
+app.listen(port,()=>{
+    console.log(`[Server] running on port ${port}`);
 })
