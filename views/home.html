@@ -16,10 +16,17 @@
     <header>
         <div class="header-container">
             <div class="logo">
-                <img src="/images/logo-mercado-liebre.svg" alt="Logo-Mercado-Liebre">
+                <a href="/">
+                    <img src="/images/logo-mercado-liebre.svg" alt="Logo-Mercado-Liebre">
+                </a>
             </div>
             <div class="search-barra">
-               barra de busqueda
+                <form method="GET" class="form-search">
+                    <input type="search" id="search" name="search" placeholder="Buscar, productos, marcas...">
+                    <button class="button-search">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </button>
+                </form>
             </div>
             <div class="forma-de-pagos">
                 <p>
@@ -30,16 +37,16 @@
         </div>
         <nav class="navBar">
             <ul class="navbar-item">
-                <li #ofertas>Ofertas</li>
-                <li>Tiendas Oficiales</li> <!-- link -->
-                <li>Vender</li>
-                <li>Ayuda</li>
+                <li><a href="#ofertas">Ofertas</a></li>
+                <li><a href="tiendasOficales.html">Tiendas Oficiales</a></li> <!-- link -->
+                <li><a href="vender.html">Vender</a></li>
+                <li><a href="#ayuda">Ayuda</a></li>
             </ul>
             <ul class="navbar-item">
-                <li><a href="regiter.html"></a>Creá tu cuenta <i class="fa-regular fa-id-card"></i></li>
+                <li><a href="register.html">Creá tu cuenta <i class="fa-regular fa-id-card"></i></a></li>
                 <!-- VER SI ESCRIBIR DENTRO DE <a>-->
-                <li> <a href="login.html"></a>Ingresa <i class="fa-solid fa-right-to-bracket"></i></li>
-                <li> <a href="misCompras.html"></a>Mis Compras <i class="fa-solid fa-basket-shopping"></i></li>
+                <li> <a href="login.html">Ingresa <i class="fa-solid fa-right-to-bracket"></i></a></li>
+                <li> <a href="misCompras.html">Mis Compras <i class="fa-solid fa-basket-shopping"></i></a></li>
             </ul>
         </nav>
         <div class="burguer-menu-container">
@@ -119,7 +126,7 @@
             </div>
         </section>
 
-        <section class="productos-section">
+        <section class="productos-section" id="ofertas">
             <h3 class="subtitle-section">Seccion Ofertas</h3>
             <div class="products">
                 <div class="product">
