@@ -51,9 +51,7 @@ h2 {
     display: flex;
     gap: 4em;
     justify-content: space-evenly;
-    /*justify-content: space-around;*/
     align-items: center;
-    /*justify-content: center;   CON ESTA QUEDA AL MEDIO EL RADIO CON DOS OPCIONES DEVICE*/
 }
 
 input {
@@ -82,7 +80,6 @@ h5 {
 
 .button {
     width: 35%;
-    /*EL ANCHO DE LOS BOTONES*/
     padding: 0.5em 0.9em 0.5em 0.9em;
     border: none;
 }
@@ -128,22 +125,12 @@ h5 {
         flex-direction: row;
         flex-wrap: wrap;
         gap: 1.5em;
-        /*justify-content: center;*/
     }
 
     .user-radio-checkbox {
         display: flex;
         flex-direction: column;
     }
-
-    /*.personal,
-    .password {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        gap: 1.5em;
-        justify-content: center;
-    }*/
 
     .personal>.input-item,
     .password>.input-item {

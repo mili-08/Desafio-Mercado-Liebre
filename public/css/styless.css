@@ -34,7 +34,6 @@ p {
 .precio {
    font-size: 18px;
    width: 30%;
-   /*PARA MODIFICAR EL ESPACIO QUE OCUPA EN EL REGLON JUNTO CON EL DESCUENTO */
 }
 
 .descuento {
@@ -56,7 +55,6 @@ p {
    flex-wrap: wrap;
    justify-content: center;
    gap: 1.5em;
-   /*gap: 1em; ANTES*/
    margin-bottom: 1.5em;
    align-items: center;
 }
@@ -95,11 +93,9 @@ p {
    justify-content: center;
    text-align: center;
    flex-direction: column;
-   /* FIJARSE PARA DIVACE ES INUTIL*/
    margin-bottom: 24px;
    flex-direction: column;
    width: 90%;
-   /* PARA MEDIR EL ANCHO DEL FOOTER*/
 }
 
 .icono-footer {
@@ -224,15 +220,6 @@ a:focus {
    opacity: revert;
 }
 
-/*.search-barra {
-   width: 100%;
-   display: flex;
-   /*justify-content: center;*/
-/*}
-
-.form-search{
-   width: 80%;
-}*/
 
 @media (min-width: 480px) {
 
@@ -372,15 +359,3 @@ a:focus {
    }
 
 }
-
-
-
-
-
-/*Paleta de colores
- Amarillo: #EAC926;
- Azul: #03264C;
- Celeste: #1259c3;
- Gris oscuro: #666;
- Gris claro: #ebebeb;
- Verde: #39b54a; */
