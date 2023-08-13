@@ -56,7 +56,7 @@ p {
    flex-wrap: wrap;
    justify-content: center;
    gap: 1.5em;
-   /*gap: 1em; ANTES*/ 
+   /*gap: 1em; ANTES*/
    margin-bottom: 1.5em;
    align-items: center;
 }
@@ -217,6 +217,13 @@ a:focus {
    width: 100%;
 }
 
+.items-footer h5 {
+   color: black;
+   font-size: revert;
+   font-weight: revert;
+   opacity: revert;
+}
+
 /*.search-barra {
    width: 100%;
    display: flex;
@@ -259,6 +266,20 @@ a:focus {
    .search-barra {
       width: 60%;
    }
+
+   .precio {
+      width: 40%;
+   }
+
+   .container-precio-desc {
+      gap: 1em;
+   }
+
+   .forma-de-pagos p {
+      margin-top: 0.3em;
+      font-size: 1.2em;
+   }
+
 }
 
 
@@ -270,6 +291,24 @@ a:focus {
 
    .product {
       width: 23%;
+      box-shadow: none;
+   }
+
+   .product:hover .nombre-producto {
+      opacity: 1;
+   }
+
+   .product:hover {
+      box-shadow: 0px 0px 10px rgb(100, 100, 100);
+   }
+
+   .icon-truck i {
+      transition: transform 450ms;
+   }
+
+   .product:hover .icon-truck i {
+
+      transform: rotateZ(-90deg);
    }
 
    .burguer-menu-container {
@@ -289,6 +328,7 @@ a:focus {
 
    .nombre-producto {
       display: block;
+      opacity: 0;
    }
 
    .logo {
@@ -299,27 +339,37 @@ a:focus {
       display: flex;
       justify-content: center;
       align-items: center;
-      width: 25%;
+      width: 20%;
    }
 
    .forma-de-pagos p {
-      font-size: 0.9em;
+      font-size: 1em;
       text-align: center;
    }
 
    a:hover {
       color: #1053b7;
    }
-   
+
    .search-barra {
       width: 45%;
    }
 
-   .form-search input:hover, .form-search button:hover {
+   .form-search input:hover,
+   .form-search button:hover {
       border: 2px solid #666;
       border-radius: 5px;
    }
 
+   .items-footer {
+      flex-direction: row;
+      gap: 3em;
+      justify-content: space-around;
+   }
+
+   .icono-footer i:hover {
+      color: #666;
+   }
 
 }
 
